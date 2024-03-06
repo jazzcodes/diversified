@@ -1,6 +1,17 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from '../boards/app/app.board';
 import { createBoard } from '@wixc3/react-board';
 import Login_board_module from './login.board.module.scss';
 import Classnames from 'classnames';
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
+
 // import styles from './App.module.scss';
 export default createBoard({
     name: 'Login',
@@ -31,7 +42,7 @@ export default createBoard({
                     <button
                         className={Classnames(
                             Login_board_module['login-card__btn'],
-                            Login_board_module['login-card__btn-SSO'],
+                            Login_board_module['login-card__btn-SSO']
                         )}
                     >
                         Sign in with Single Sign On

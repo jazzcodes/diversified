@@ -1,7 +1,6 @@
 import { createBoard } from '@wixc3/react-board';
 import Login_board_module from './login.board.module.scss';
 import Classnames from 'classnames';
-
 export default createBoard({
     name: 'Login',
     Board: () => (

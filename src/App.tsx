@@ -8,16 +8,12 @@ import styles from './App.module.scss';
 function App() {
     return (
         <div className={Login_board_module['login-body']}>
-            <img
-                src="{process.env.PUBLIC_URL + '/assets/bg-pattern.png'}"
-                alt=""
-                className={Login_board_module['bg-top']}
-            />
+            <img src="src/assets/bg-pattern.png" alt="" className={Login_board_module['bg-top']} />
             <div className={Login_board_module.login}>
                 <div className={Login_board_module['login-card']}>
                     <div className={Login_board_module['login-card__header']}>
                         <div className={Login_board_module['login-card-logo-container']}>
-                            <img src="./src/assets/bg-pattern.png" alt="" />
+                            <img src="/src/assets/logo.png" alt="" />
                         </div>
                         <h2></h2>Sign in to Uptime
                     </div>
@@ -49,7 +45,7 @@ function App() {
                 </div>
             </div>
             <img
-                src="{process.env.PUBLIC_URL + '/assets/bg-pattern.png'}"
+                src="src/assets/bg-pattern.png"
                 alt=""
                 className={Login_board_module['bg-bottom']}
             />

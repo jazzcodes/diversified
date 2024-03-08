@@ -1,22 +1,19 @@
 import { useState } from 'react';
 import classNames from 'classnames';
 import Login_board_module from '../src/_codux/boards/login.board.module.scss';
-import { ReactComponent as ReactLogo } from './assets/react.svg';
+// import { ReactComponent as BG } from './assets/bg-pattern.png';
+
 import styles from './App.module.scss';
 
 function App() {
     return (
         <div className={Login_board_module['login-body']}>
-            <img
-                src="C:\Users\admin\OneDrive\Desktop\demo\diversified\src\assets\bg-pattern.png"
-                alt=""
-                className={Login_board_module['bg-top']}
-            />
+            <img src="./assets/bg-pattern.png" alt="" className={Login_board_module['bg-top']} />
             <div className={Login_board_module.login}>
                 <div className={Login_board_module['login-card']}>
                     <div className={Login_board_module['login-card__header']}>
                         <div className={Login_board_module['login-card-logo-container']}>
-                            <img src="/src/assets/logo.png" alt="" />
+                            <img src="./assets/logo.png" alt="" />
                         </div>
                         <h2></h2>Sign in to Uptime
                     </div>
@@ -47,11 +44,7 @@ function App() {
                     <button className={Login_board_module['login-footer-btn']}>Sign Up</button>
                 </div>
             </div>
-            <img
-                src="/src/assets/bg-pattern.png"
-                alt=""
-                className={Login_board_module['bg-bottom']}
-            />
+            <img src="./assets/bg-pattern.png" alt="" className={Login_board_module['bg-bottom']} />
         </div>
     );
 }

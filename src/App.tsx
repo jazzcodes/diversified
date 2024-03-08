@@ -7,7 +7,7 @@ import styles from './App.module.scss';
 function App() {
     return (
         <div className={Login_board_module['login-body']}>
-            <img src="/src/assets/bg-pattern.png" alt="" className={Login_board_module['bg-top']} />
+            <img src="/assets/bg-pattern.png" alt="" className={Login_board_module['bg-top']} />
             <div className={Login_board_module.login}>
                 <div className={Login_board_module['login-card']}>
                     <div className={Login_board_module['login-card__header']}>

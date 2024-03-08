@@ -17,7 +17,7 @@ function App() {
                 <div className={Login_board_module['login-card']}>
                     <div className={Login_board_module['login-card__header']}>
                         <div className={Login_board_module['login-card-logo-container']}>
-                            <img src="{process.env.PUBLIC_URL + '/assets/logo.png'}" alt="" />
+                            <img src="./src/assets/bg-pattern.png" alt="" />
                         </div>
                         <h2></h2>Sign in to Uptime
                     </div>

@@ -89,9 +89,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0px;
+  justify-content: space-evenly;
   font-weight: 500;
+  font-size: 35px;
+  align-content: center;
 }
 .login-body {
   display: flex;
@@ -111,7 +112,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  box-shadow: 0.71px 0.71px 4px rgba(0, 0, 0, 0.48);
+  box-shadow: 6.36px 6.36px 23px -6px rgba(0, 0, 0, 0.48);
 }
 .login {
   display: flex;
@@ -123,7 +124,6 @@
 }
 .login-footer {
   width: 492px;
-  height: 100px;
   padding: 40px;
   background-color: #ffffff;
   border: 0px solid black;
@@ -146,4 +146,6 @@
   padding-right: 10px;
   padding-bottom: 12px;
   padding-left: 10px;
+}
+.App {
 }

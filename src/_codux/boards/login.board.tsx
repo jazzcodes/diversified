@@ -30,7 +30,7 @@ export default createBoard({
                     <button
                         className={Classnames(
                             Login_board_module['login-card__btn'],
-                            Login_board_module['login-card__btn-SSO']
+                            Login_board_module['login-card__btn-SSO'],
                         )}
                     >
                         Sign in with Single Sign On

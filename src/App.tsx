@@ -1,59 +1,53 @@
 import { useState } from 'react';
 import classNames from 'classnames';
+import Login_board_module from '../src/_codux/boards/login.board.module.scss';
 import { ReactComponent as ReactLogo } from './assets/react.svg';
-import { ReactComponent as ViteLogo } from './assets/vite.svg';
-import { ReactComponent as TypescriptLogo } from './assets/typescript.svg';
-import { ReactComponent as ScssLogo } from './assets/scss.svg';
 import styles from './App.module.scss';
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
-        <div className={styles.App}>
-            <div>
-                <a href="sr" target="_blank">
-                    <ViteLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo)}
-                        title="Vite logo"
-                    />
-                </a>
-                <a href="https://reactjs.org" target="_blank">
-                    <ReactLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo, styles.react)}
-                        title="React logo"
-                    />
-                </a>
-                <a href="https://www.typescriptlang.org/" target="_blank">
-                    <TypescriptLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo, styles.ts)}
-                        title="Typescript logo"
-                    />
-                </a>
-                <a href="https://sass-lang.com/" target="_blank">
-                    <ScssLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo, styles.scss)}
-                        title="SCSS logo"
-                    />
-                </a>
+        <div className={Login_board_module['login-body']}>
+            <img src="/src/assets/bg-pattern.png" alt="" className={Login_board_module['bg-top']} />
+            <div className={Login_board_module.login}>
+                <div className={Login_board_module['login-card']}>
+                    <div className={Login_board_module['login-card__header']}>
+                        <div className={Login_board_module['login-card-logo-container']}>
+                            <img src="/src/assets/logo.png" alt="" />
+                        </div>
+                        <h2></h2>Sign in to Uptime
+                    </div>
+                    <div className={Login_board_module['login-card__email-box']}>
+                        Email
+                        <input
+                            placeholder="Enter your work email"
+                            name="E"
+                            className={Login_board_module['login-card__email']}
+                        />
+                    </div>
+                    <button className={Login_board_module['login-card__btn']}>Continue</button>
+                    <div className={Login_board_module['login-card__or']}>
+                        <div className={Login_board_module['or-line']}></div>OR
+                        <div className={Login_board_module['or-line']}></div>
+                    </div>
+                    <button
+                        className={classNames(
+                            Login_board_module['login-card__btn'],
+                            Login_board_module['login-card__btn-SSO']
+                        )}
+                    >
+                        Sign in with Single Sign On
+                    </button>
+                </div>
+                <div className={Login_board_module['login-footer']}>
+                    Don&apos;t have an account?{' '}
+                    <button className={Login_board_module['login-footer-btn']}>Sign Up</button>
+                </div>
             </div>
-            <div className={styles.card}>
-                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className={styles['read-the-docs']}>
-                Click on the Vite and React logos to learn more
-            </p>
+            <img
+                src="/src/assets/bg-pattern.png"
+                alt=""
+                className={Login_board_module['bg-bottom']}
+            />
         </div>
     );
 }

@@ -3,16 +3,18 @@ import classNames from 'classnames';
 import Login_board_module from '../src/_codux/boards/login.board.module.scss';
 // import { logo } from './assets/logo.png';
 // import { bg } from './assets/bg-pattern.png';
+import bg from '../src/assets/bg-pattern.png';
+import logo from '../src/assets/logo.png';
 
 function App() {
     return (
         <div className={Login_board_module['login-body']}>
-            <img src="src/assets/bg-pattern.png" alt="" className={Login_board_module['bg-top']} />
+            <img src={bg} alt="" className={Login_board_module['bg-top']} />
             <div className={Login_board_module.login}>
                 <div className={Login_board_module['login-card']}>
                     <div className={Login_board_module['login-card__header']}>
                         <div className={Login_board_module['login-card-logo-container']}>
-                            <img src="src/assets/logo.png" alt="" />
+                            <img src={logo} alt="" />
                         </div>
                         <h2></h2>Sign in to Uptime
                     </div>
@@ -43,11 +45,7 @@ function App() {
                     <button className={Login_board_module['login-footer-btn']}>Sign Up</button>
                 </div>
             </div>
-            <img
-                src="src/assets/bg-pattern.png"
-                alt=""
-                className={Login_board_module['bg-bottom']}
-            />
+            <img src={bg} alt="" className={Login_board_module['bg-bottom']} />
         </div>
     );
 }
